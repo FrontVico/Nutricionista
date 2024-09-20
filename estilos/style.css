@@ -88,7 +88,7 @@ button {
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  color: royalblue;
+  color: #101728;
   z-index: 1;
   font-family: inherit;
   font-weight: 500;
@@ -102,7 +102,7 @@ button span {
   height: 100%;
   background: transparent;
   z-index: -1;
-  border: 4px solid royalblue;
+  border: 4px solid #101728;
 }
 
 button span::before {
@@ -111,7 +111,6 @@ button span::before {
   position: absolute;
   width: 8%;
   height: 500%;
-  background: var(--lightgray);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-60deg);
@@ -121,7 +120,7 @@ button span::before {
 button:hover span::before {
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 100%;
-  background: royalblue;
+  background: #101728;
 }
 
 button:hover {
@@ -129,7 +128,7 @@ button:hover {
 }
 
 button:active span::before {
-  background: #2751cd;
+  background: #101728;
 }
 
 .secAbout{
@@ -180,6 +179,7 @@ button:active span::before {
 /* Para garantir que o texto não fique muito longo em telas menores */
 p {
   line-height: 1.5; /* Aumenta a legibilidade */
+  margin-top: 30px;
 }
 
 
@@ -208,6 +208,10 @@ p {
     margin-top: 10px;
     line-height: 1.5;
   }
+}
+
+.txtProjs {
+  color: #101728;
 }
  
 @media (max-width: 999px) {
