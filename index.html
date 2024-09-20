@@ -54,7 +54,7 @@
       <ul class="nav-list">
         <li><a href="#">Pagina inicial</a></li>
         <li><a href="#about">Quem eu sou</a></li>
-        <li><a href="#">Meus projetos</a></li>
+        <li><a href="#MeusProjetos">Meus projetos</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Agendar</a></li>
       </ul>
@@ -63,13 +63,20 @@
 
 
   <!-- PGIN -->
-   <div class="pgin flex justify-center items-center text-center mt-4">
+  <div class="pgin flex flex-col justify-center items-center text-center mt-4">
     <img class="logoImg" src="assets/logo.png" alt="">
-   </div>
+    <a href="">
+      <button class="flex justify-center text-center items-center mt-2"> <!-- Adicionei uma margem superior para espaçamento -->
+          Contato
+          <span></span>
+      </button>
+  </a>
+  </div>
   <!-- PGIN -->
 
-<!-- ABOUT -->
-<section id="about" class="secAbout items-center text-center justify-center flex">
+
+  <!-- ABOUT -->
+  <section id="about" class="secAbout items-center text-center justify-center flex">
   <div class="about-container">
     <h1 class="txtAbout text-3xl md:text-5xl font-bold mt-3">QUEM EU SOU:</h1> <!-- Ajuste aqui -->
     <div class="about-content">
@@ -89,8 +96,32 @@
       </div>
     </div>
   </div>
+  </section>
+  <!-- ABOUT -->
+
+<!-- TESTIMONIALS -->
+<section id="MeusProjetos" class="bg-gray-200 py-8">
+  <div class="container mx-auto text-center mt-3">
+    <h2 class="text-3xl font-bold mb-6">O que as pessoas dizem</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
+        <p class="italic text-md">"A consulta com Guilherme foi transformadora! Aprendi a me alimentar melhor!"</p>
+        <p class="font-bold mt-1">— Maria Silva</p>
+      </div>
+      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
+        <p class="italic text-md">"Os planos nutricionais que ele criou foram fundamentais para meu desempenho."</p>
+        <p class="font-bold mt-1">— João Pereira</p>
+      </div>
+      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
+        <p class="italic text-md">"Nunca me senti tão bem com a minha alimentação! Recomendo."</p>
+        <p class="font-bold mt-1">— Ana Costa</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- ABOUT -->
+<!-- TESTIMONIALS -->
+
+
 
 
 
