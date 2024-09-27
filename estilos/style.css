@@ -78,57 +78,29 @@ main {
   height: 85vh;
 }
 
+/* From Uiverse.io by Navarog21 */ 
 button {
-  border: none;
-  display: block;
+  width: 10em;
   position: relative;
-  padding: 0.7em 2.4em;
-  font-size: 18px;
-  background: transparent;
+  height: 3.5em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: #149CEA;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  user-select: none;
-  overflow: hidden;
-  color: #101728;
-  z-index: 1;
-  font-family: inherit;
-  font-weight: 500;
 }
 
-button span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  border: 4px solid #101728;
-}
 
-button span::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8%;
-  height: 500%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-60deg);
-  transition: all 0.3s;
-}
-
-button:hover span::before {
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 100%;
-  background: #101728;
+button:hover::before, button:hover::after {
+  transform: scale(0)
 }
 
 button:hover {
-  color: white;
-}
-
-button:active span::before {
-  background: #101728;
+  box-shadow: inset 0px 0px 25px #1479EA;
 }
 
 .secAbout{
