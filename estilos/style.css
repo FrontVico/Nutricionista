@@ -70,12 +70,17 @@ main {
   transition: 0.3s;
 }
 
-.logoImg {
-  height: 20rem;
+.logo {
+  height: 12rem;
 }
 
 .pgin {
-  height: 85vh;
+  background-image: url("../assets/bg.jpeg");
+  height: 100vh;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+
 }
 
 /* From Uiverse.io by Navarog21 */ 
@@ -83,10 +88,9 @@ button {
   width: 10em;
   position: relative;
   height: 3.5em;
-  border: 3px ridge #149CEA;
   outline: none;
-  background-color: transparent;
-  color: #149CEA;
+  background-color: #149CEA;
+  color: white;
   transition: 1s;
   border-radius: 0.3em;
   font-size: 16px;
@@ -237,9 +241,11 @@ p {
   }
 
   .imgGui {
-    width: 40%; /* Ajusta o tamanho da imagem */
+    width: 30%; /* Ajusta o tamanho da imagem */
     min-width: 200px; /* Garante um tamanho mínimo */
     height: 450px;
+    object-fit: cover; /* Garante que a imagem mantenha sua proporção sem distorção */
+ 
   }
 
   .about-text {
