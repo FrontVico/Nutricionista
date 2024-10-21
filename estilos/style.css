@@ -71,19 +71,49 @@ main {
 }
 
 .logo {
-  height: 12rem;
+  height: 9.2rem;
 }
 
 .pgin {
-  background-image: url("../assets/bg.jpeg");
+  background-image: linear-gradient(
+      rgba(16, 23, 40, 0.7), /* Tom escuro (#101728) com opacidade */
+      rgba(16, 23, 40, 0.7), /* Tom escuro (#101728) com opacidade */
+      rgba(16, 23, 40, 0.7), /* Tom escuro (#101728) com opacidade */
+      rgba(16, 23, 40, 0.7), /* Tom escuro (#101728) com opacidade */
+      rgba(0, 0, 0, 0.7) /* Azul vibrante (#149CEA) com opacidade */
+    ),
+    url("../assets/bg.jpeg");
   height: 100vh;
   background-position: center;
-  object-fit: cover;
   background-size: cover;
-
+  object-fit: cover;
 }
 
-/* From Uiverse.io by Navarog21 */ 
+/* Estilo para PC (largura maior que 1024px) */
+@media (min-width: 1024px) {
+  .pgin {
+    background-color: #101728; /* Cor sólida no PC */
+    background-image: none; /* Remove o gradiente e a imagem no PC */
+  }
+}
+
+
+.TituloPG {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.SubPG {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
 button {
   width: 10em;
   position: relative;
@@ -112,7 +142,8 @@ button:hover {
 }
 
 .txtAbout {
-  font-family: "Playfair Display", serif;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
   font-optical-sizing: auto;
   font-style: normal;
   color: #fff;
