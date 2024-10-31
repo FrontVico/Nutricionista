@@ -70,7 +70,7 @@
       <ul class="nav-list">
         <li><a href="#">Pagina inicial</a></li>
         <li><a href="#about">Quem eu sou</a></li>
-        <li><a href="#MeusProjetos">Meus projetos</a></li>
+        <li><a href="#MeusProjetos">Meus clientes</a></li>
         <li><a href="#mapa">Localização</a></li>
         <li><a href="#">Agendar</a></li>
       </ul>
@@ -103,8 +103,6 @@
         <p class="about-text text-white mt-3 font-bold text-xl md:text-md">
           Como nutricionista, meu objetivo é promover uma alimentação saudável e equilibrada que atenda às suas necessidades individuais. Acredito que cada pessoa é única, e por isso desenvolvo planos nutricionais personalizados, levando em consideração suas preferências, estilo de vida e objetivos.
         </p>
-        <br>
-        <br>
         <p class="about-text text-white font-bold mt-4 text-xl md:text-md">
           Como nutricionista clínico e esportivo, meu foco é otimizar sua performance atlética por meio de uma alimentação estratégica.
         </p>
@@ -120,48 +118,45 @@
   <!-- ABOUT -->
 
 
-  <!-- CLIENTES -->
-  <section id="MeusProjetos" class="bg-gray-200 py-8">
+<!-- CLIENTES -->
+<section id="MeusProjetos" class="bg-gray-200 py-8">
   <div class="container justify-center items-center mx-auto text-center mt-3">
-    <h2 class="text-4xl font-bold mb-6 txtProjs">Meus projetos</h2>
+    <h2 class="text-4xl font-bold mb-6 txtProjs">Meus pacientes</h2>
     <div class="flex flex-wrap justify-center gap-4">
-      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
-        <p class="italic text-md">"Muito atencioso. Mais que um profissional, um amigo!"</p>
-        <p class="font-bold mt-1">— Vinícius Ramos Amorim</p>
+      <div class="feedback-card">
+        <div class="feedback-content">
+          <img src="assets/vinicius.jpeg" alt="Vinícius Ramos Amorim" class="client-photo">
+          <div>
+            <p class="italic text-md">"Muito atencioso. Mais que um profissional, um amigo!"</p>
+            <p class="font-bold mt-1">— Vinícius Ramos Amorim</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="feedback-content">
+          <img src="assets/gustavo.jpeg" alt="Gustavo Souza" class="client-photo">
+          <div>
+            <p class="italic text-md">"Sensacional! Guilherme é muito preciso nas suas prescrições, dieta de acordo com o objetivo do cliente, simplesmente sensacional! Eu indico de olho fechado."</p>
+            <p class="font-bold mt-1">— Gustavo Souza</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="feedback-content">
+          <img src="assets/gigi.jpg" alt="Giovana Souza" class="client-photo">
+          <div>
+            <p class="italic text-md">"Nunca me senti tão bem com a minha alimentação! Recomendo."</p>
+            <p class="font-bold mt-1 txtPojes">— Giovana Souza</p>
+          </div>
+        </div>
       </div>
 
 
-      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
-        <p class="italic text-md">"Os planos nutricionais que ele criou foram fundamentais para meu desempenho."</p>
-        <p class="font-bold mt-1">— João Pereira</p>
-      </div>
-
-
-      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
-        <p class="italic text-md">"Nunca me senti tão bem com a minha alimentação! Recomendo."</p>
-        <p class="font-bold mt-1 txtPojes">— Ana Costa</p>
-      </div>
-
-      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
-        <p class="italic text-md">"Nunca me senti tão bem com a minha alimentação! Recomendo."</p>
-        <p class="font-bold mt-1 txtPojes">— Ana Costa</p>
-      </div>
-
-      <div class="bg-white border border-gray-300 rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-1/2 md:w-1/3">
-        <p class="italic text-md">"Nunca me senti tão bem com a minha alimentação! Recomendo."</p>
-        <p class="font-bold mt-1 txtPojes">— Ana Costa</p>
-      </div>
-
-
-    </div>
-  </div>
-  </section>
-  <!-- CLIENTES -->
-
-  
   <!-- MAPA -->
   <section id="mapa" class="loc py-8">
-  <div class="container mx-auto text-center">
+  <div class=" container mx-auto text-center">
     <h2 style="color: #101728" class="text-4xl md:text-5xl font-bold mb-6 textLoc">Localização</h2>
     <div class="map-container flex justify-center items-center mt-6">
       <iframe
@@ -207,11 +202,5 @@
   </footer>
   <!-- FOOTER -->
 
-
-
-
-
-
-  
 </body>
 </html>

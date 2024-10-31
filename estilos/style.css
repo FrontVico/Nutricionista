@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   margin: 0;
@@ -24,7 +25,7 @@ a:hover {
 .logo {
   font-size: 24px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  padding: 4px;
 }
 
 nav {
@@ -34,10 +35,13 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #101728;
+  background: #ffffff;
   height: 12vh;
   font-family: "Oswald", sans-serif;
+}
 
+nav a {
+  color: #101728;
 }
 
 main {
@@ -65,7 +69,7 @@ main {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background:#101728;
   margin: 8px;
   transition: 0.3s;
 }
@@ -128,6 +132,14 @@ button {
   cursor: pointer;
 }
 
+.map {
+  width: 100%; /* Garante que o mapa ocupe 100% da largura */
+  height: 400px; /* Ajuste a altura conforme necessário */
+  margin: 0; /* Remove margens indesejadas */
+  padding: 0; /* Remove paddings indesejados */
+}
+
+
 
 button:hover::before, button:hover::after {
   transform: scale(0)
@@ -142,7 +154,6 @@ button:hover {
 }
 
 .txtAbout {
-  font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
   font-optical-sizing: auto;
   font-style: normal;
@@ -156,7 +167,7 @@ button:hover {
   margin: 0 auto;
   padding: 0 20px;
   margin-top: 20px;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .about-content {
@@ -240,6 +251,10 @@ p {
   padding: 54px 0;
   gap: 24px;
   color: #FFF;
+  width: 100%; /* Garante que o footer ocupe 100% da largura */
+  background-color: #101728; /* Defina uma cor de fundo, se necessário */
+  position: relative; /* Para garantir que o footer esteja no fluxo normal da página */
+  left: 0; /* Alinha o footer à esquerda */
 }
 
 .footer-icons {
@@ -247,6 +262,50 @@ p {
   gap: 8px;
   color: #FFF;
 }
+
+/* Estilos gerais para o card de feedback */
+.feedback-card {
+  background-color: white;
+  border: 1px solid #D1D5DB; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-md */
+  transition: box-shadow 0.3s; /* transition-shadow duration-300 */
+  width: 100%; /* w-full */
+  margin-top: 20px;
+}
+
+.feedback-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* hover:shadow-lg */
+}
+
+/* Conteúdo do feedback */
+.feedback-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Estilo para a foto do cliente */
+.client-photo {
+  width: 5rem;
+  height: 5rem; 
+  border-radius: 100%;
+  margin-right: 1rem; 
+}
+
+/* Para ajustar o tamanho do contêiner em telas maiores */
+@media (min-width: 640px) {
+  .feedback-card {
+    width: calc(50% - 1rem); /* sm:w-1/2 */
+  }
+}
+
+@media (min-width: 768px) {
+  .feedback-card {
+    width: calc(33.33% - 1rem); /* md:w-1/3 */
+  }
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -299,7 +358,7 @@ p {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #101728;;
+    background: #FFF;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

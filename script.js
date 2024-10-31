@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  
+
   const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",
